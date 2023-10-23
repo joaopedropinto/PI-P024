@@ -1,0 +1,5 @@
+Nas classes Cliente e Dependente, existe uma ligação de Composição. Neste cenário, o Dependente é firmemente ligado ao Cliente, não tendo autonomia para existir por conta própria. Contudo, o Cliente pode existir sem qualquer Dependente atrelado.
+
+Roteiro, Deslocamento e Pernoite derivam da classe Evento através de uma relação de Herança. Isso indica que são versões especializadas de um Evento, compartilhando características, como a duração, por exemplo.
+
+E, entre as classes Pacote e Evento, há uma relação de Agregação. Elas podem trabalhar juntas de forma complementar, mas também têm a capacidade de operar individualmente.
