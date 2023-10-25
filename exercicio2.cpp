@@ -1,6 +1,55 @@
-// Gregue
+#include <iostream>
+#include <vector>
+#include <string>
 
-// Gregue
+using namespace std;
+class Cliente;
+class Pacote;
+class Dependente;
+class Evento;
+class Cliente
+{
+private:
+  string nome;
+  string cpf;
+  vector<Pacote *> pacotes;
+
+public:
+  Cliente(string nome, string cpf)
+  {
+    this->cpf = cpf;
+    this->nome = nome;
+    this->pacotes = {};
+  }
+
+  void setPacotes(Pacote *pacote)
+  {
+    this->pacotes.push_back(pacote);
+  }
+  vector<Pacote *> &getPacotes()
+  {
+    return pacotes;
+  }
+  string getNome()
+  {
+    return nome;
+  }
+
+  void setNome(string nome)
+  {
+    this->nome = nome;
+  }
+
+  string getCPF()
+  {
+    return cpf;
+  }
+
+  void setCPF(string cpf)
+  {
+    this->cpf = cpf;
+  }
+};
 
 // Gabriel
 
