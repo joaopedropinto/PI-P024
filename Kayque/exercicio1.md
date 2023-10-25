@@ -1,3 +1,5 @@
+## Questão 1 ##
+
 Cliente e Dependente: A relação entre o Cliente e Dependente é de composição, representada pela linha sólida e preenchida no diagrama. Isso significa que um Cliente possui um ou mais Dependentes e que o ciclo de vida dos Dependentes está ligado ao Cliente. Se um Cliente for removido/destruído, seus Dependentes também serão.
 
 Cliente e Pacote: A relação entre Cliente e Pacote é de agregação, representada pela linha sólida e diamante vazio. Um Cliente pode possuir vários Pacotes, mas os Pacotes não são necessariamente destruídos quando o Cliente é. Os Pacotes podem existir independentemente do Cliente.
@@ -20,6 +22,8 @@ Evento e Pernoite
 Agregação:
 Cliente e Pacote
 Pacote e Evento
+
+## Questão 2 ##
 
 Esboço em c++:
 
