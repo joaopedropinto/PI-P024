@@ -51,9 +51,71 @@ public:
   }
 };
 
-// Gabriel
 
-// Gabriel
+class Dependente
+{
+private:
+  string nome;
+  Cliente *dependenteDe;
+
+public:
+  string getNome()
+  {
+    return nome;
+  }
+
+  void setNome(string nome)
+  {
+    this->nome = nome;
+  }
+
+  Cliente getDependente()
+  {
+    return *dependenteDe;
+  }
+
+  void setDependente(Cliente *dependenteDe)
+  {
+    this->dependenteDe = dependenteDe;
+  }
+  string getCpfResponsavel()
+  {
+    dependenteDe->getCPF();
+  }
+};
+
+class Evento
+{
+private:
+  string nome;
+  double duracao;
+
+public:
+  Evento(string nome, double duracao)
+  {
+    this->nome = nome;
+    this->duracao = duracao;
+  }
+
+  string getNome()
+  {
+    return nome;
+  }
+
+  void setNome(string nome)
+  {
+    this->nome = nome;
+  }
+  double getDuracao()
+  {
+    return duracao;
+  }
+
+  void setDuracao(double duracao)
+  {
+    this->duracao = duracao;
+  }
+};
 
 //Kayque
 
