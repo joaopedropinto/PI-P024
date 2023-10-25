@@ -117,9 +117,74 @@ public:
   }
 };
 
-//Kayque
+class Pacote
+{
+private:
+  string nome;
+  vector<Evento *> eventos;
+  vector<Cliente *> clientes;
 
-//Kayque
+public:
+  Pacote()
+  {
+  }
+
+  string getNome()
+  {
+    return nome;
+  }
+
+  vector<Evento *> getEventos()
+  {
+    return eventos;
+  }
+
+  vector<Cliente *> getClientes()
+  {
+    return clientes;
+  }
+  void setClientes(Cliente *cliente)
+  {
+    this->clientes.push_back(cliente);
+  }
+  void setNome(string nome)
+  {
+    this->nome = nome;
+    this->clientes = {};
+  }
+
+  void adicionarEvento(Evento *evento)
+  {
+    eventos.push_back(evento);
+  }
+};
+
+class Roteiro : public Evento
+{
+
+public:
+  Roteiro(string nome, double duracao) : Evento(nome, duracao)
+  {
+  }
+};
+
+class Deslocamento : public Evento
+{
+
+public:
+  Deslocamento(string nome, double duracao) : Evento(nome, duracao)
+  {
+  }
+};
+
+class Pernoite : public Evento
+{
+
+public:
+  Pernoite(string nome, double duracao) : Evento(nome, duracao)
+  {
+  }
+};
 
 class SistemaTuristico
 {
