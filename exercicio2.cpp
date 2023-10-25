@@ -59,7 +59,6 @@ public:
 
 //Kayque
 
-// Joao
 class SistemaTuristico
 {
 
@@ -354,7 +353,6 @@ public:
     }
   }
 };
-// Joao
 
 int main()
 {
